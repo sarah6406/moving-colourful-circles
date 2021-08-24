@@ -3,6 +3,9 @@ const canvas = document.querySelector('canvas');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+setInterval(() => {
+    document.querySelector('h1').innerText = `hey sarah ${new Date()}`
+}, 1000)
 // c = context
 const c = canvas.getContext('2d');
 // // c.fillRect(x, y, width, height)
